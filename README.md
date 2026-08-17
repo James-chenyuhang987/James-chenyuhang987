@@ -14,16 +14,20 @@ My projects focus on turning these ideas into real, interactive products — fro
 
 ### 🎵 [Partmate-MTX](https://github.com/James-chenyuhang987/Partmate-MTX)
 
-**AI-powered music learning, choir rehearsal, and creative training platform**
+**AI-powered, part-specific practice and creative learning system for choirs**
 
-Partmate-MTX is an AI-powered music learning and choir rehearsal platform designed to turn practice into a continuous cycle of diagnosis, personalized training, ensemble awareness, and creative exploration. The system combines **Optical Music Recognition (OMR), audio analysis, multimodal feedback, and LLM-based interpretation**. Sheet music can be scanned and converted into structured practice material, while vocal recordings are evaluated across pitch, rhythm, dynamics, and breathing-related features. Pitch tracking uses YIN-style estimation, while RMS energy, spectral flux, onset timing, note duration, and rest alignment provide complementary evidence for performance analysis.
+Partmate-MTX is a browser-based AI practice system built specifically for **choir sectional rehearsal**. Instead of giving singers a single entertainment-style score, PartMate builds a complete learning loop: **locate the mistake → diagnose why it happened → prescribe a targeted exercise → verify mastery through an unguided retest**.
 
-Instead of relying on a single opaque score, Partmate-MTX separates measurable musical signals from language-model feedback: deterministic scoring produces consistent results, and the LLM translates those results into understandable rehearsal suggestions. The platform includes a singer practice interface, conductor-facing group analysis, personal progress tracking, recording export, and multimodal video-assisted practice. Its **Create / Harmony workflow** extends the product beyond rehearsal by allowing users to move from a single vocal track toward layered harmony, arrangement, and multi-track creation.
+During practice, the system aligns a singer with a structured **MusicXML score** and analyzes pitch, entry timing, missed notes, rhythm, note duration, and stability at the phrase and measure level. Real-time pitch tracking is powered by **Pitchy / MPM**, while RMS energy, spectral flux, onset detection, and dynamic-programming alignment provide an independent rhythm-analysis pipeline. A versioned scoring dictionary keeps thresholds consistent across real-time feedback, review, prescriptions, and retests; **deterministic rules make the musical judgments, while the LLM is used only to explain results and generate understandable feedback**.
 
-The long-term goal is simple: help users move from **learning one song → building a sustainable personalized practice habit → developing broader musicianship through ensemble participation, arranging, and creative production**.
+PartMate also supports **OMR score import** through Audiveris/homr/oemer, Chroma + DTW alignment for teacher reference recordings, adaptive guidance from full → weak → unguided practice, personal progress tracking, and a conductor dashboard that aggregates singer performance into a **part × measure heatmap**.
+
+Its **Create / Harmony Workshop** extends learning into musicianship: a song is separated into vocals and accompaniment, analyzed for melody, key, chords, beats, and structure, then transformed through rule-constrained and LLM-directed arranging into layered harmony tracks with SVC-based voice conversion and multi-track mixing.
+
+The goal is to move users from **learning a song → building personalized practice habits → understanding ensemble relationships → arranging, harmonizing, and creating music themselves**.
 
 **Core Technologies:**
-`OMR` · `Audio Signal Processing` · `Pitch Tracking` · `Rhythm Analysis` · `Multimodal Analysis` · `LLM Feedback` · `Personalized Learning` · `Multi-track Audio`
+`TypeScript` · `MusicXML / OSMD` · `OMR` · `Pitchy / MPM` · `RMS & Spectral Flux` · `Onset & Rhythm Analysis` · `Chroma + DTW` · `Rule-based Scoring` · `LLM Feedback` · `MVSep / BS-Roformer` · `pYIN` · `SVC` · `Multi-track Audio`
 
 ---
 
