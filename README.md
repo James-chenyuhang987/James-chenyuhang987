@@ -27,7 +27,7 @@ The long-term goal is simple: help users move from **learning one song → build
 
 ---
 
-### 🧭 [Beat-Runner](https://github.com/chenyuhang987-wq/Beat-Runner)
+### 🧭 [Beat-Runner](https://github.com/James-chenyuhang987/Beat-Runner)
 
 Beat-Runner is an original pseudo-3D web rhythm runner built around music-driven interaction. Players control an energy ball across three neon tracks, dodging obstacles and collecting notes in sync with each song's BPM. The game includes three levels, rhythm-based abilities, talent choices, combo and ranking systems, story progression, level unlocking, and responsive controls for both desktop and mobile devices.
 
@@ -35,7 +35,7 @@ Beat-Runner is an original pseudo-3D web rhythm runner built around music-driven
 
 ---
 
-### 🧠 [Pathfinder-AI-Learning](https://github.com/chenyuhang987-wq/Pathfinder-AI-Learning)
+### 🧠 [Pathfinder-AI-Learning](https://github.com/James-chenyuhang987/Pathfinder-AI-Learning)
 
 Pathfinder-AI-Learning is an adaptive education agent that explores how LLMs can support individualized learning rather than simply answer questions. It combines agentic planning, memory-decay modeling, dynamic knowledge graphs, and motivational feedback to transform static learning materials into a responsive learning process. The project focuses on long-term adaptation, personalized pacing, and incentive design for sustained student engagement.
 
