@@ -12,22 +12,22 @@ My projects focus on turning these ideas into real, interactive products — fro
 
 ## 🚀 Featured Projects
 
-### 🎵 [Partmate-MTX](https://github.com/James-chenyuhang987/Partmate-MTX)
+### 🎵 [PartMate-MTX](https://github.com/James-chenyuhang987/Partmate-MTX)
 
-**AI-powered, part-specific practice and creative learning system for choirs**
+**AI-powered, part-specific choir practice and creative learning platform**
 
-Partmate-MTX is a browser-based AI practice system built specifically for **choir sectional rehearsal**. Instead of giving singers a single entertainment-style score, PartMate builds a complete learning loop: **locate the mistake → diagnose why it happened → prescribe a targeted exercise → verify mastery through an unguided retest**.
+PartMate-MTX is a browser-based practice system built specifically for **choir sectional rehearsal**. Instead of reducing a performance to a single entertainment-style score, PartMate creates a complete learning loop: **locate the mistake → diagnose why it happened → prescribe a targeted exercise → verify mastery through an unguided retest**.
 
-During practice, the system aligns a singer with a structured **MusicXML score** and analyzes pitch, entry timing, missed notes, rhythm, note duration, and stability at the phrase and measure level. Real-time pitch tracking is powered by **Pitchy / MPM**, while RMS energy, spectral flux, onset detection, and dynamic-programming alignment provide an independent rhythm-analysis pipeline. A versioned scoring dictionary keeps thresholds consistent across real-time feedback, review, prescriptions, and retests; **deterministic rules make the musical judgments, while the LLM is used only to explain results and generate understandable feedback**.
+During practice, the system uses **MusicXML scores and teacher reference recordings** as musical targets, analyzing pitch, entry timing, missed notes, rhythm, note duration, and stability down to individual phrases and measures. **Pitchy / MPM** provides pitch tracking, while RMS energy and spectral flux provide complementary evidence for onset and missed-note detection. Thresholds and scoring rules are centralized in a versioned scoring dictionary, keeping real-time feedback, review, prescriptions, and retests consistent. **Deterministic rules make the musical judgments; the LLM does not score performances, but translates structured results into understandable feedback and encouragement.**
 
-PartMate also supports **OMR score import** through Audiveris/homr/oemer, Chroma + DTW alignment for teacher reference recordings, adaptive guidance from full → weak → unguided practice, personal progress tracking, and a conductor dashboard that aggregates singer performance into a **part × measure heatmap**.
+Beyond scoring, PartMate integrates **OMR score digitization**, OSMD-based MusicXML rendering, Web Audio synchronization, and **Chroma + DTW** alignment between teacher demonstrations and sheet music. A personalized growth system tracks performance by **song × vocal part × measure**, dynamically estimates mastery, and gradually removes guidance before unguided retesting. The conductor dashboard aggregates individual results into a **part × measure heatmap**, helping identify shared weaknesses before rehearsal.
 
-Its **Create / Harmony Workshop** extends learning into musicianship: a song is separated into vocals and accompaniment, analyzed for melody, key, chords, beats, and structure, then transformed through rule-constrained and LLM-directed arranging into layered harmony tracks with SVC-based voice conversion and multi-track mixing.
+The **Create / Harmony Workshop** extends PartMate from practice into musical creation. MVSep separates vocals from accompaniment, pYIN extracts melodic information and supports key, chord, and beat analysis; rule-based logic preserves musical constraints while the LLM directs section-level and vocal-part arrangement. Pitch shifting, **SVC voice conversion**, and multi-track mixing then transform a single vocal line into editable layered harmonies.
 
 The goal is to move users from **learning a song → building personalized practice habits → understanding ensemble relationships → arranging, harmonizing, and creating music themselves**.
 
 **Core Technologies:**
-`TypeScript` · `MusicXML / OSMD` · `OMR` · `Pitchy / MPM` · `RMS & Spectral Flux` · `Onset & Rhythm Analysis` · `Chroma + DTW` · `Rule-based Scoring` · `LLM Feedback` · `MVSep / BS-Roformer` · `pYIN` · `SVC` · `Multi-track Audio`
+`TypeScript` · `MusicXML / OSMD` · `Web Audio` · `OMR` · `Pitchy / MPM` · `RMS & Spectral Flux` · `Rhythm Analysis` · `Chroma + DTW` · `Rule-based Scoring` · `LLM Feedback` · `MVSep` · `pYIN` · `SVC` · `Multi-track Audio`
 
 ---
 
